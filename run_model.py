@@ -220,16 +220,16 @@ def main():
 	params_gbsg={'lr': 0.006110800184497216, 'weight_decay': 0.001, 'optimizer': 'Adamw', 'batch_size': 64, 'hidden_dim': 32, 'num_layers': 3, 'n_epochs': 256, 'beta': 0.3,
         'alpha': 0.06620108843070453, 'eta': 0.0, 'samples_tr': 10, 'samples_te': 10, 'U': 2, 'seed': 2023, 'temperature': 0.67, 'temp_test': 0.67,
           'dropout_rate': 0.28720705337164026, 'patience': 10}
-	#gbsg_metrics = run_experiments(dataset="GBSG2", seeds=seeds, params=params_gbsg, config=config_te, loader=True, sampling=False)
+	gbsg_metrics = run_experiments(dataset="GBSG2", seeds=seeds, params=params_gbsg, config=config_te, loader=True, sampling=False)
 	
 	params_whas = {'lr': 0.00019850702089699906, 'weight_decay': 0.001, 'optimizer': 'Adamw', 'batch_size': 128, 'hidden_dim': 64, 'num_layers': 3, 'n_epochs': 302,
           'beta': 0.01463452373245862, 'alpha': 0.025104855289783387, 'eta': 0.0, 'samples_tr': 10, 'samples_te': 10, 'U': 4,
           'temperature': 0.3, 'temp_test': 0.01, 'dropout_rate': 0.33939168111661316, 'patience': 10}
-	#whas_metrics = run_experiments(dataset="WHAS500", seeds=seeds, params=params_whas, config=config_te, loader=True, sampling=False)
+	whas_metrics = run_experiments(dataset="WHAS500", seeds=seeds, params=params_whas, config=config_te, loader=True, sampling=False)
 	
 	params_meta = {'lr': 0.0003392233273446403, 'weight_decay': 1e-05, 'optimizer': 'Adam', 'batch_size': 128, 'hidden_dim': 64, 'num_layers': 2, 'n_epochs': 347, 'beta': 0.005,
             'alpha': 0.45429729919306455, 'eta': 0.0, 'samples_tr': 10, 'samples_te': 10, 'U': 2, 'seed': 123, 'temperature': 1.69, 'temp_test': 0.67, 'dropout_rate': 0.1, 'patience': 10}
-	#metabric_metrics = run_experiments(dataset="METABRIC", seeds=seeds, params=params_meta, config=config_te, loader=True, sampling=False)
+	metabric_metrics = run_experiments(dataset="METABRIC", seeds=seeds, params=params_meta, config=config_te, loader=True, sampling=False)
 	
 	params_seer = {'lr': 0.0003641435723303748, 'weight_decay': 0.0001, 'optimizer': 'Adam', 'batch_size': 64, 'hidden_dim': 64, 'num_layers': 1, 'n_epochs': 306, 'beta': 0.01, 'alpha': 0.01,
           'eta': 0.0, 'samples_tr': 5, 'samples_te': 15, 'U': 2, 'seed': 2024, 'temperature': 0.5, 'temp_test': 0.01, 'dropout_rate': 0.05, 'patience': 5}
