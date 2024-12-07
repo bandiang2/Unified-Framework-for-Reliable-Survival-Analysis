@@ -7,5 +7,5 @@ Survival analysis (time-to-event prediction) focuses on predicting the time unti
 
 ## Run
 - Download pre-processed datasets from this [link](https://drive.google.com/drive/folders/13i1hW6PT7W698ZCxjFvARznxYk8RtCA0?usp=sharing) and put them in the data folder.
-- ` python3 run_model.py`
+- ` python run_model.py`
 
